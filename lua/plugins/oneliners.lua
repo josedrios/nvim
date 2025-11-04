@@ -5,11 +5,11 @@ return {
             require('nvim-highlight-colors').setup({})
         end
     },
-    {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        config = true,
-    },
+    --    {
+    --        'windwp/nvim-autopairs',
+    --        event = "InsertEnter",
+    --        config = true,
+    --   },
     {
         "stevearc/conform.nvim",
         opts = {
