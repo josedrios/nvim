@@ -8,14 +8,14 @@ return {
                 enable = true
             },
             indent = { enable = true },
-            autotage = { enable = true },
+            auto_install = true,
             ensure_installed = {
                 "lua",
                 "typescript",
                 "javascript",
                 "tsx",
+                "html"
             },
-            auto_install = false,
         })
     end
 }
