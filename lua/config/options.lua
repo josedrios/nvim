@@ -6,4 +6,4 @@ vim.opt.shiftwidth = 4
 
 -- Netrw Settings
 vim.g.netrw_banner = 0    -- hide top info banner
-vim.g.netrw_liststyle = 3 -- tree view
+vim.g.netrw_liststyle = 0 -- tree view

@@ -7,7 +7,5 @@ return {
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Add current file to harpoon" })
         vim.keymap.set("n", "<leader>e", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
             { desc = "Toggle harpoon menu list" })
-        vim.keymap.set("n", "<leader>[", function() harpoon:list():prev() end, { desc = "Previous harpoon file" })
-        vim.keymap.set("n", "<leader>]", function() harpoon:list():next() end, { desc = "Next harpoon file" })
     end
 }
