@@ -1,5 +1,25 @@
-local function enable_transparency()
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- Tweaks to Kanso theme (no bg and set telescope colors)
+local function set_transparency()
+    vim.api.nvim_create_autocmd("User", {
+        pattern = "VeryLazy",
+        callback = function()
+            vim.cmd([[
+                hi Normal guibg=NONE ctermbg=NONE
+		hi NormalFloat guibg=#14171d ctermbg=NONE
+		hi SignColumn guibg=NONE ctermbg=NONE
+		hi LineNr guibg=NONE ctermbg=NONE
+            ]])
+
+            vim.cmd([[
+	      hi TelescopeNormal guibg=#14171d ctermbg=NONE
+	      hi TelescopeBorder guibg=#14171d ctermbg=NONE
+	      hi TelescopePromptNormal guibg=#14171d ctermbg=NONE
+	      hi TelescopePromptBorder guibg=#14171d ctermbg=NONE
+	      hi TelescopeResultsNormal guibg=#14171d ctermbg=NONE
+	      hi TelescopeResultsBorder guibg=#14171d ctermbg=NONE
+	    ]])
+        end,
+    })
 end
 
 return {
@@ -7,7 +27,7 @@ return {
         "webhooked/kanso.nvim",
         config = function()
             vim.cmd.colorscheme("kanso")
-            enable_transparency()
+            set_transparency()
         end
     },
     {
