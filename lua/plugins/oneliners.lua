@@ -5,6 +5,9 @@ return {
             require('nvim-highlight-colors').setup({})
         end
     },
+    {
+        'numToStr/Comment.nvim',
+    },
     --    {
     --        'windwp/nvim-autopairs',
     --        event = "InsertEnter",
