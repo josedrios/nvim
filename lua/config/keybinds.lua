@@ -3,7 +3,6 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>cd", vim.cmd.Ex, { desc = "Open Netrw" })
 vim.keymap.set("n", "<leader>w", ':write<CR>', { desc = "Write buffer" })
 vim.keymap.set("n", "<leader>q", ':quit<CR>', { desc = "Quit buffer" })
-vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "Hover for info" })
 
 -- Window Splitting
 vim.keymap.set("n", "<leader>y", ":split<CR><C-w>w", { desc = "Horizontal Window Split" })

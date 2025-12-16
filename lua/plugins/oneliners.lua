@@ -8,11 +8,6 @@ return {
     {
         'numToStr/Comment.nvim',
     },
-    --    {
-    --        'windwp/nvim-autopairs',
-    --        event = "InsertEnter",
-    --        config = true,
-    --   },
     {
         "stevearc/conform.nvim",
         opts = {
