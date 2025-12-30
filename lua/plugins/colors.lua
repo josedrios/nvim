@@ -5,7 +5,7 @@ local function set_transparency()
         callback = function()
             vim.cmd([[
   hi Normal guibg=NONE ctermbg=NONE
-  hi NormalFloat guibg=#4b3d6a ctermbg=NONE
+  hi NormalFloat guibg=#14171d ctermbg=NONE
   hi SignColumn guibg=NONE ctermbg=NONE
   hi LineNr guibg=NONE ctermbg=NONE
   hi TelescopeNormal guibg=#14171d ctermbg=NONE
