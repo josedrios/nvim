@@ -140,6 +140,9 @@ return {
         --
         vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
         --
+        cmp.setup.filetype('markdown', {
+            enabled = false,
+        })
         cmp.setup({
             preselect = 'item',
             completion = {
