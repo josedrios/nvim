@@ -1,20 +1,28 @@
 return {
-    {
-        "p00f/alabaster.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.opt.termguicolors = true
-            vim.cmd.colorscheme("alabaster")
-        end,
-    },
-    {
-        "nvim-lualine/lualine.nvim",
-        dependencies = {
-            "nvim-tree/nvim-web-devicons",
-        },
-        opts = {
-            theme = "alabaster",
-        }
-    }
+    -- {
+    --     "p00f/alabaster.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function()
+    --         vim.opt.termguicolors = true
+    --         vim.cmd.colorscheme("alabaster")
+    --     end,
+    -- },
+    -- {
+    --     "Alligator/accent.vim",
+    --     config = function()
+    --         vim.g.accent_darken = 1
+    --         vim.cmd("colorscheme accent")
+    --     end,
+    -- }
+    --
+    -- {
+    --     "nvim-lualine/lualine.nvim",
+    --     dependencies = {
+    --         "nvim-tree/nvim-web-devicons",
+    --     },
+    --     opts = {
+    --         theme = "alabaster",
+    --     }
+    -- }
 }
